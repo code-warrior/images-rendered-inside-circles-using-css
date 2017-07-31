@@ -17,7 +17,7 @@ header {
 }
 
 figure{
-   @include border-radius(100%);
+   @include border-radius(50%);
    @include box-shadow(10px, 10px, 12px, 0, rgba(0,0,0,0.5));
    color: transparent;
    float: left;
@@ -30,7 +30,7 @@ figure{
       opacity: 1;
    }
    &>figcaption {
-      @include border-radius(100%);
+      @include border-radius(50%);
       @include transition(all, 250ms);
       height: $height-of-figcaption;
       padding: $padding-top-of-figcaption $padding-width-of-figure 0;
@@ -64,7 +64,7 @@ figure{
          &>img{
             position: absolute; //also can be set to relative and given float.
             z-index: 1;
-            @include border-radius(100%);
+            @include border-radius(50%);
             @include box-shadow(10px, 10px, 12px, 0, rgba(0,0,0,0.5));
             width: $width-of-figure;
             height: $height-of-figure;
